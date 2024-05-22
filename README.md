@@ -6,3 +6,10 @@
 The flow of traffic is as follows
 
 http:// ---> ASG-EC2: ---> nginx_docker:default_port
+## Steps to launch server
+1) terraform init
+2) terraform plan -out nginx
+3) terraform apply nginx
+
+## Access the server
+http://<load_balancer_dns_name>
